@@ -49,3 +49,19 @@ def bmi_categorization(df):
 df_bmi_data_category = bmi_categorization(df_bmi_data_bmi)
 
 print(df_bmi_data_category)
+
+df_bmi_data_category.to_sql("table_bmi_data_category", conn, index=False)
+
+qry_category_overweight_count = """select count(*) as OverWeight_people
+                                   from table_bmi_data_category 
+                                   where bmi_range_kg_m2 = 'Overweight'"""
+
+def bmi_category_overweight_count(df):
+    df = pd.read_sql_query(qry_category_overweight_count, conn)
+    return df
+
+df_bmi_category_overweight_count = bmi_category_overweight_count(df_bmi_data_category)
+
+
+print(df_bmi_category_overweight_count)
+
