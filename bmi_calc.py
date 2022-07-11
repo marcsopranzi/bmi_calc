@@ -22,7 +22,10 @@ df_bmi_data.to_sql("table_bmi_data", conn, index=False)
 df_category_data.to_sql("table_category_data", conn, index=False)
 
 qry_bmi_calculation = """select *, 
-                                WeightKg/power(cast(HeightCm as real)/100, 2) as BMI_index 
+                                case when WeightKg > 0 and HeightCm > 0
+                                then WeightKg/power(cast(HeightCm as real)/100, 2) 
+                                else 0 
+                                end as BMI_index 
                          from table_bmi_data"""
 
 def bmi_calculation(df):
