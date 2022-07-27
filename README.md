@@ -6,6 +6,6 @@ classified and printed.
 This code can be run locally executing the setup_env.sh file, first you you must change
 the file properties wiht `chmod +x setup_env.sh` . Once the file is executed the project 
 dependencies will be installed and ready for use. 
-The sample data is in the data folder and it can be processed running `python3 main.py`
+The sample data is in the data folder and it can be processed running `python3 bmi_calc.py`
 
 ----
