@@ -1,4 +1,4 @@
-# Data load for a BMI flag calculator.
+# Data load for a BMI calculator.
 
 This a simplistic approach to a BMI calculator, where a json file is loaded to be
 classified and printed.
