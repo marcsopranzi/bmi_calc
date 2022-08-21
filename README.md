@@ -1,6 +1,6 @@
 # Data load for a BMI flag calculator.
 
-This a simplistic approach to a bmi calculator, where a json file is loaded to be
+This a simplistic approach to a BMI calculator, where a json file is loaded to be
 classified and printed.
 
 This code can be run locally executing the setup_env.sh file. First, you you must change
