@@ -13,7 +13,7 @@ echo "Activating venv"
 source ./venv_bmi_calc/bin/activate
 
 echo "Install dependencies"
-pip install "pytest==7.1.2" "numpy==1.23.0" "pandas" "math" "sqlite3"
+pip install "pytest==7.1.2" "numpy==1.23.0" "pandas==1.4.3" "pre-commit"
 
 echo "Pip upgrade"
 pip install --upgrade pip
