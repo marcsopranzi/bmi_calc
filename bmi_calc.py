@@ -59,7 +59,7 @@ df_bmi_data_category.to_sql("table_bmi_data_category", conn, index=False)
 
 qry_category_overweight_count = """select count(*) as OverWeight_people
                                    from table_bmi_data_category
-                                   where bmi_range_kg_m2 = 'Overweight'"""
+                                   where bmi_range_kg_m2 = '--Overweight'"""
 
 
 def bmi_category_overweight_count(df):
